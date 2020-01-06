@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.19.0",
+    "element-ui": "^2.13.0",
+    "vue": "^2.6.11"
+  }
+}
