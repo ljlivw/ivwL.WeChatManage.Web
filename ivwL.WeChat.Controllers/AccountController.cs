@@ -23,7 +23,8 @@ namespace ivwL.WeChat.Controllers
                 {
                     return await Error("账号或密码错误");
                 }
-                return await Success(sys_User.ToJson());
+                CacheData.Cahce.Set("logininfo", sys_User.ToJson());
+                return await Success();
             }
             catch (Exception ex)
             {

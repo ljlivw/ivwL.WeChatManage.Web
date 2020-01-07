@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChatManage.Web", "ivwL.WeChatManage.Web\ivwL.WeChatManage.Web.csproj", "{FEA8393B-0AD3-4E67-ADF2-71C98D688609}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChatManage.Web", "ivwL.WeChatManage.Web\ivwL.WeChatManage.Web.csproj", "{FEA8393B-0AD3-4E67-ADF2-71C98D688609}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Controllers", "ivwL.WeChat.Controllers\ivwL.WeChat.Controllers.csproj", "{1060BF2A-B22E-4603-A53C-ADCCD81825BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.Controllers", "ivwL.WeChat.Controllers\ivwL.WeChat.Controllers.csproj", "{1060BF2A-B22E-4603-A53C-ADCCD81825BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Models", "ivwL.WeChat.Models\ivwL.WeChat.Models.csproj", "{1B34A5A8-EFC5-4091-850E-C693DD8FB867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.Models", "ivwL.WeChat.Models\ivwL.WeChat.Models.csproj", "{1B34A5A8-EFC5-4091-850E-C693DD8FB867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.IDao", "ivwL.WeChat.IDao\ivwL.WeChat.IDao.csproj", "{004CB611-6778-4DA2-A947-1BB46BF32B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.IDao", "ivwL.WeChat.IDao\ivwL.WeChat.IDao.csproj", "{004CB611-6778-4DA2-A947-1BB46BF32B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Dao", "ivwL.WeChat.Dao\ivwL.WeChat.Dao.csproj", "{612230BF-717C-4C59-BB68-9AD65394D425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.Dao", "ivwL.WeChat.Dao\ivwL.WeChat.Dao.csproj", "{612230BF-717C-4C59-BB68-9AD65394D425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Services", "ivwL.WeChat.Services\ivwL.WeChat.Services.csproj", "{09677B96-6B8D-4BD0-8233-653E12136F95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.Services", "ivwL.WeChat.Services\ivwL.WeChat.Services.csproj", "{09677B96-6B8D-4BD0-8233-653E12136F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Utilities", "ivwL.WeChat.Utilities\ivwL.WeChat.Utilities.csproj", "{57E68BC8-7E2C-4D77-853E-B17B6FC76124}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ivwL.WeChat.Utilities", "ivwL.WeChat.Utilities\ivwL.WeChat.Utilities.csproj", "{57E68BC8-7E2C-4D77-853E-B17B6FC76124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ivwL.WeChat.Attributes", "ivwL.WeChat.Attributes\ivwL.WeChat.Attributes.csproj", "{D19CC555-7713-48E9-B881-B503480AAEEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{57E68BC8-7E2C-4D77-853E-B17B6FC76124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57E68BC8-7E2C-4D77-853E-B17B6FC76124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57E68BC8-7E2C-4D77-853E-B17B6FC76124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19CC555-7713-48E9-B881-B503480AAEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19CC555-7713-48E9-B881-B503480AAEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19CC555-7713-48E9-B881-B503480AAEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19CC555-7713-48E9-B881-B503480AAEEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

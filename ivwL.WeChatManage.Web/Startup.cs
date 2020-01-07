@@ -28,7 +28,7 @@ namespace ivwL.WeChatManage.Web
 
             services.AddSession(a =>
             {
-                a.IdleTimeout = TimeSpan.FromMinutes(30);
+                a.IdleTimeout = TimeSpan.FromMinutes(CacheData.AppSettings.CacheEffectiveTime);
             });
             services.AddOptions();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
