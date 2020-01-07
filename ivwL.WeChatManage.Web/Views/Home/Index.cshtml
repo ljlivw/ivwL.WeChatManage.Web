@@ -1,4 +1,49 @@
 ﻿@{
-    ViewBag.Title = "微信后台管理信息系统";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
+<!DOCTYPE html>
+
+<html style="height:100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <script src="~/vue/vue.min.js"></script>
+    <script src="~/element-ui/index.js"></script>
+    <script src="~/axios/axios.min.js"></script>
+    <script src="~/ivwl.js"></script>
+    <link href="~/element-ui/theme-chalk/index.css" rel="stylesheet" />
+    <title>微信后台管理信息系统</title>
+</head>
+<body style="height:100%;margin:0;">
+    <template id="tplMain">
+        <el-container style="height:100%;">
+            <el-aside>
+                <el-menu :collapse="mainSet.isCollapse" :router="true">
+                    <el-submenu index="1">
+                        <template slot="title">学院管理</template>
+                        <el-menu-item index="1-1" :route="{path:'/Account/Index'}">登陆</el-menu-item>
+                    </el-submenu>
+                </el-menu>
+            </el-aside>
+            <el-container>
+                <el-header></el-header>
+                <el-main><router-view></router-view></el-main>
+            </el-container>
+        </el-container>
+    </template>
+    <script src="~/home/index.js"></script>
+</body>
+</html>
+<script>
+    new Vue({
+        el: '#tplMain',
+        template: '#tplMain',
+        data: {
+            mainSet: {
+                isCollapse: false
+            }
+        },
+        methods: {
+        }
+    })
+</script>
+
