@@ -18,13 +18,15 @@
     <template id="tplMain">
         <el-container style="height:100%;">
             <el-aside>
-                <el-menu :collapse="mainSet.isCollapse" default-active="/Account/Index" router>
+                <el-menu :collapse="mainSet.isCollapse">
                     <el-menu-item index="/Account/Index">登陆</el-menu-item>
                 </el-menu>
             </el-aside>
             <el-container>
                 <el-header></el-header>
-                <el-main><router-view id="ivwLView"></router-view></el-main>
+                <el-main style="overflow:hidden;">
+                    <iframe id="ivwlBaseiFrame" src="" style="width:100%;height:100%;border:0;"></iframe>
+                </el-main>
             </el-container>
         </el-container>
     </template>
@@ -32,14 +34,7 @@
 </body>
 </html>
 <script>
-    var routes = [
-        { path: '/Account', name: 'Account' }
-    ]
-    var router = new VueRouter({
-        routes
-    })
     new Vue({
-        router,
         el: '#tplMain',
         template: '#tplMain',
         data: {
@@ -48,9 +43,6 @@
             }
         },
         methods: {
-            onRoutes() {
-
-            }
         }
     });
 </script>
