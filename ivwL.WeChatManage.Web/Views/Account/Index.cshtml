@@ -9,10 +9,10 @@
             <el-form ref="accountFrom" :model="form">
                 <h3 class="title">微信后台管理信息系统</h3>
                 <el-form-item>
-                    <el-input type="text" v-model="form.Code" auto-complete="off" placeholder="账号" prefix-icon="iconfont el-icon-ivw-denglu"></el-input>
+                    <el-input type="text" v-model="form.Code" auto-complete="off" placeholder="账号" prefix-icon="iconfont zt-icon-yonghu"></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-input type="password" v-model="form.Password" auto-complete="off" placeholder="密码" prefix-icon="iconfont el-icon-ivw-denglumima"></el-input>
+                    <el-input type="password" v-model="form.Password" auto-complete="off" placeholder="密码" prefix-icon="iconfont zt-icon-mima"></el-input>
                 </el-form-item>
                 <el-form-item>
                     <el-button type="primary" style="width:100%;" @@click="btnlogin" :loading="formSet.loginLoading">{{formSet.txtLogin}}</el-button>
